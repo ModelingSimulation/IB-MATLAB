@@ -8,10 +8,9 @@
 ```
 ```
 
-## Contributing
+## Authors
 
-PRs accepted.
-
+Guanhua Sun, Tristan Goodwill.
 ## License
 
 CIMS © RTG Group
