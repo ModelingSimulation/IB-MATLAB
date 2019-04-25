@@ -1,4 +1,5 @@
 function F=Forcespr(X)
+%this force calculation creates a network of springs
 global  Nb K ed;
 F=zeros(Nb,3);
 numed=size(ed,1);
