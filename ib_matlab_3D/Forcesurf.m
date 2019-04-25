@@ -1,4 +1,5 @@
 function F=Forcesurf(X)
+%thi force calculation uses the surface energy(the area) as its energy function.
 global  Nb v K;
 F=zeros(Nb,3);
 numtri=size(v,1);
