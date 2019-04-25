@@ -1,4 +1,7 @@
 function [uuu,uu,ppp]=fluid(u,ff)
+%uuu outputs the final velocity, where uu is the output in between. 
+%See notes on https://www.math.nyu.edu/faculty/peskin/ib_lecture_notes/index.html 
+%ppp outputs the final pressure.
 global a dt rho mu b;
 w=u-(dt/2)*skew(u)+(dt/(2*rho))*ff;
 w=fft(w,[],1);
@@ -27,7 +30,7 @@ ppp=b(:,:,:,1).*w(:,:,:,1)+b(:,:,:,2).*w(:,:,:,2)+b(:,:,:,3).*w(:,:,:,3);
 ppp=ifft(ppp,[],3);
 ppp=ifft(ppp,[],2);
 ppp=real(ifft(ppp,[],1));
-%ppp is the pointwise pressure output
+%ppp is the pressure output
 uuu=ifft(uuu,[],3);
 uuu=ifft(uuu,[],2);
 uuu=real(ifft(uuu,[],1));
