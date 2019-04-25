@@ -1,4 +1,5 @@
 function vsph=vpoly(X)
+%this function calculates the volume of a triangulted polyhedron whose points on every triangle is counterclockwise oriented.
 global v
 vsph=0;
 numtri=size(v,1);
@@ -8,10 +9,6 @@ for ti =1:numtri
     B=X(v(ti,2),:);
     C=X(v(ti,3),:);
     vol=1/6*dot(cross(A,B),C);
-    %if dot(cross((B-A),(C-B)),vnorm)>0
-        vsph=vsph+vol;
-    %else
-    %    vsph=vsph-vol;
-    %end
+    vsph=vsph+vol;
 end
 
