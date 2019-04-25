@@ -1,5 +1,5 @@
 function F=Forcespr(X)
-%this force calculation creates a network of springs
+%this force calculation uses the sum of the square of every edge's length as the energy function.
 global  Nb K ed;
 F=zeros(Nb,3);
 numed=size(ed,1);
