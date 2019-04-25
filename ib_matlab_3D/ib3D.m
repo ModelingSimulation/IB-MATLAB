@@ -1,5 +1,8 @@
 % ib3D.m
 % This script is the main program.
+%Coauthored by Guanhua Sun & Tristan Goodwill,2019.4
+%Original Code:
+%https://www.math.nyu.edu/faculty/peskin/ib_lecture_notes/index.html
 
 global dt Nb N h rho mu ip im a b tri v K triarea ed;
 
