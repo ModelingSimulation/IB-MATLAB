@@ -1,6 +1,6 @@
 # IB-MATLAB
 
-```
+```www
 ```
 
 ## Usage
@@ -9,8 +9,3 @@
 ```
 
 ## Authors
-
-Guanhua Sun, Tristan Goodwill.
-## License
-
-CIMS © RTG Group
