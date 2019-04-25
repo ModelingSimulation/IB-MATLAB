@@ -1,7 +1,5 @@
 # IB-MATLAB
 
-## Install
-
 ```
 ```
 
@@ -16,4 +14,4 @@ PRs accepted.
 
 ## License
 
-MIT © Richard McRichface
+CIMS © RTG Group
