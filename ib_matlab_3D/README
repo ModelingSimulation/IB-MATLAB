@@ -1,1 +1,2 @@
 This 3D code contains a triangulation program that triangulates a sphere. The triangulation program was authored by Prof. Charles Peskin.
+ib3D.m is the main program.
