@@ -9,9 +9,7 @@ global dt Nb N h rho mu ip im a b tri v K triarea ed;
 initialize
 init_a
 init_b
-testname=sprintf('N%udt%g',N,dt);
-mkdir (testname);
-%vollist=zeros(clockmax,1);
+
 for clock=1:clockmax
     t=clock*dt
     XX=X+(dt/2)*vec_interp(u,X);
