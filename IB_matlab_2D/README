@@ -1,0 +1,21 @@
+# IB2D-MATLAB
+
+This directory contains code for running a 2D immersed boundary simulation of an elastic curve imbeded in a fluid. The code uses the Navier Stokes equations and periodic boundary conditions.
+
+The original code (https://www.math.nyu.edu/faculty/peskin/ib_lecture_notes/index.html) was written by Charlie Peskin and was vectorized by Tristan Goodwill
+
+# Scripts:
+
+ib2D        Main script
+initialize  Initialize boundary and fluid
+init_a      Initialize Fourier domain solution operator used in fluid solver
+fluid       Time step fluid
+Force       Compute boundary forces
+laplacian   Apply usual second order centered laplacian to u
+skew        Get a nice discretization of (u. nabla)u
+sk          Helper for skew
+
+vec_interp  Interpolate value from grid to boundary
+vec_spread  Spread value from boundary to grid
+vec_phi1    Evaluate 4-point regularized delta function in x
+vec_phi2    Evaluate 4-point regularized delta function in y
